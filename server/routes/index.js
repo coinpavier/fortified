@@ -21,6 +21,10 @@ router.get('/about', forwardAuthenticated, (req, res) => res.render('about'));
 
 router.get('/faq', forwardAuthenticated, (req, res) => res.render('faq'));
 
+//SERVICES
+
+router.get('/services', forwardAuthenticated, (req, res) => res.render('services'));
+
 //blog one
 router.get('/Morgan-Stanley-Strategist-Recommends-Bitcoin-as-Central-Banks-Ramp-Up-Money-Printing', forwardAuthenticated, (req, res) => res.render('blog'));
 

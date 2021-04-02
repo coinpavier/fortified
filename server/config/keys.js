@@ -1,5 +1,5 @@
 dbPassword33 = 'mongodb://localhost:27017/mern2';
-dbPassword = 'mongodb+srv://mumu:mumu@cluster0-jhfy2.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority'
+dbPassword = 'mongodb+srv://admin:admin@cluster0.wbb6r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 module.exports = {
     mongoURI: dbPassword
