@@ -38,9 +38,9 @@ fisrt_name: {
     type: String,
     default: '00.00'
   },
-  plantype:{
+  sector:{
     type: String,
-    default: 'starter'
+    default: 'None'
   },
   totalprofit:{
     type: String,
