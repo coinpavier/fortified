@@ -17,6 +17,33 @@ router.get('/what-is-bitcoin', (req, res) => res.render('howtobuybtc'));
 //ABOUT
 router.get('/about', forwardAuthenticated, (req, res) => res.render('about'));
 
+
+//INVESTING
+router.get('/investing', forwardAuthenticated, (req, res) => res.render('investing'));
+
+
+
+//REAL ESTATE
+router.get('/real-estate', forwardAuthenticated, (req, res) => res.render('real'));
+
+
+//FINANACIAL SERVIVES 
+router.get('/financial-services', forwardAuthenticated, (req, res) => res.render('financial'));
+
+
+//CRYPTOCURRENCY
+router.get('/cryptocurrency', forwardAuthenticated, (req, res) => res.render('cryptocurrency'));
+
+
+
+//HEALTH CARE
+router.get('/health-care', forwardAuthenticated, (req, res) => res.render('health'));
+
+
+//INFORMATION TECHNOLOGY
+router.get('/information-technology', forwardAuthenticated, (req, res) => res.render('information'));
+
+
 // FAQ
 
 router.get('/faq', forwardAuthenticated, (req, res) => res.render('faq'));
