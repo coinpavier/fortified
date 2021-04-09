@@ -79,12 +79,12 @@ router.post('/register', (req, res) => {
                 console.log(user);
      
                 let transporter = nodemailer.createTransport({
-                  services: 'mailgun',
+                  host: 'smtp.mailgun.org',
                   port: 465,
                   secure: true, // true for 465, false for other ports
                   auth: {
-                      user: 'postmaster@mail.coinanalytica.com', // generated ethereal user
-                      pass: 'fdae0ba668a4d7379f4b5eb1bb0241fc-e687bab4-47e1afe5'  // generated ethereal password
+                      user: 'postmaster@mailer.coinanalytica.com', // generated ethereal user
+                      pass: '4f5377eed491c2251e466dcd471c1f31-e687bab4-8c54f8f4'  // generated ethereal password
                   },
                   tls:{
                     rejectUnauthorized:false
@@ -327,14 +327,14 @@ router.post('/register', (req, res) => {
                     </tbody>
                     </table>
                     <div align="center" class="img-container center fixedwidth" style="padding-right: 0px;padding-left: 0px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center fixedwidth" src="images/Welcome_Email.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 420px; display: block;" title="I'm an image" width="420"/>
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center fixedwidth" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/Welcome_Email.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 420px; display: block;" title="I'm an image" width="420"/>
                     <!--[if mso]></td></tr></table><![endif]-->
                     </div>
                     <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: Tahoma, sans-serif"><![endif]-->
                     <div style="color:#191919;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;line-height:1.5;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;">
                     <div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #191919; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 18px;">
                     <p style="font-size: 16px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><strong><span style="font-size: 38px;">Hi  ${fisrt_name}, ${last_name}</span></strong></p>
-                    <p style="font-size: 16px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><strong><span style="font-size: 38px;">welcome to Fortifiedbenefit!</span></strong></p>
+                    <p style="font-size: 16px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><strong><span style="font-size: 38px;">welcome to Fortified</span></strong></p>
                     </div>
                     </div>
                     <!--[if mso]></td></tr></table><![endif]-->
@@ -538,7 +538,7 @@ router.post('/register', (req, res) => {
                     <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                     <!--<![endif]-->
                     <div align="center" class="img-container center fixedwidth" style="padding-right: 40px;padding-left: 0px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 40px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center fixedwidth" src="images/Step_1_1.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 193px; display: block;" title="I'm an image" width="193"/>
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 40px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center fixedwidth" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/Step_1_1.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 193px; display: block;" title="I'm an image" width="193"/>
                     <!--[if mso]></td></tr></table><![endif]-->
                     </div>
                     <!--[if (!mso)&(!IE)]><!-->
@@ -597,7 +597,7 @@ router.post('/register', (req, res) => {
                     <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                     <!--<![endif]-->
                     <div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 40px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 40px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center autowidth" src="images/Step_2_2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 193px; display: block;" title="I'm an image" width="193"/>
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 40px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center autowidth" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/Step_2_2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 193px; display: block;" title="I'm an image" width="193"/>
                     <!--[if mso]></td></tr></table><![endif]-->
                     </div>
                     <!--[if (!mso)&(!IE)]><!-->
@@ -739,7 +739,7 @@ router.post('/register', (req, res) => {
                     <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                     <!--<![endif]-->
                     <div align="center" class="img-container center autowidth" style="padding-right: 35px;padding-left: 0px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 35px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center autowidth" src="images/Step_3_1.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 198px; display: block;" title="I'm an image" width="198"/>
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 35px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center autowidth" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/Step_3_1.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 198px; display: block;" title="I'm an image" width="198"/>
                     <div style="font-size:1px;line-height:10px"> </div>
                     <!--[if mso]></td></tr></table><![endif]-->
                     </div>
@@ -764,7 +764,7 @@ router.post('/register', (req, res) => {
                     <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                     <!--<![endif]-->
                     <div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 40px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 40px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center autowidth" src="images/Step_2_2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 193px; display: block;" title="I'm an image" width="193"/>
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 40px;" align="center"><![endif]--><img align="center" alt="I'm an image" border="0" class="center autowidth" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/Step_2_2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 193px; display: block;" title="I'm an image" width="193"/>
                     <!--[if mso]></td></tr></table><![endif]-->
                     </div>
                     <!--[if (!mso)&(!IE)]><!-->
@@ -947,11 +947,11 @@ router.post('/register', (req, res) => {
                     <table align="center" cellpadding="0" cellspacing="0" class="social_table" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-tspace: 0; mso-table-rspace: 0; mso-table-bspace: 0; mso-table-lspace: 0;" valign="top">
                     <tbody>
                     <tr align="center" style="vertical-align: top; display: inline-block; text-align: center;" valign="top">
-                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" height="32" src="images/facebook2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Facebook" width="32"/></a></td>
-                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://twitter.com/" target="_blank"><img alt="Twitter" height="32" src="images/twitter2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Twitter" width="32"/></a></td>
-                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://instagram.com/" target="_blank"><img alt="Instagram" height="32" src="images/instagram2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Instagram" width="32"/></a></td>
-                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://www.linkedin.com/" target="_blank"><img alt="LinkedIn" height="32" src="images/linkedin2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="LinkedIn" width="32"/></a></td>
-                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="" target="_blank"><img alt="YouTube" height="32" src="images/youtube2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="YouTube" width="32"/></a></td>
+                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" height="32" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/facebook2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Facebook" width="32"/></a></td>
+                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://twitter.com/" target="_blank"><img alt="Twitter" height="32" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/twitter2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Twitter" width="32"/></a></td>
+                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://instagram.com/" target="_blank"><img alt="Instagram" height="32" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/instagram2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Instagram" width="32"/></a></td>
+                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="https://www.linkedin.com/" target="_blank"><img alt="LinkedIn" height="32" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/linkedin2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="LinkedIn" width="32"/></a></td>
+                    <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 7.5px; padding-left: 7.5px;" valign="top"><a href="" target="_blank"><img alt="YouTube" height="32" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/youtube2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="YouTube" width="32"/></a></td>
                     </tr>
                     </tbody>
                     </table>
@@ -1036,7 +1036,7 @@ router.post('/register', (req, res) => {
                     <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:0px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                     <!--<![endif]-->
                     <div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 0px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="Alternate text" border="0" class="center autowidth" src="images/white_down.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 700px; display: block;" title="Alternate text" width="700"/>
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt="Alternate text" border="0" class="center autowidth" src="https://raw.githubusercontent.com/coinpavier/fortified/master/server/assets/images/white_down.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 700px; display: block;" title="Alternate text" width="700"/>
                     <!--[if mso]></td></tr></table><![endif]-->
                     </div>
                     <!--[if (!mso)&(!IE)]><!-->
@@ -1066,10 +1066,6 @@ router.post('/register', (req, res) => {
                     <!--[if !vml]><!-->
                     <table cellpadding="0" cellspacing="0" class="icons-inner" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;" valign="top">
                     <!--<![endif]-->
-                    <tr style="vertical-align: top;" valign="top">
-                    <td align="center" style="word-break: break-word; vertical-align: top; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 6px;" valign="top"><a href="https://www.designedwithbee.com/"><img align="center" alt="Designed with BEE" class="icon" height="32" src="images/bee.png" style="border:0;" width="null"/></a></td>
-                    <td style="word-break: break-word; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; font-size: 15px; color: #9d9d9d; vertical-align: middle; letter-spacing: undefined;" valign="middle"><a href="https://www.designedwithbee.com/" style="color:#9d9d9d;text-decoration:none;">Designed with BEE</a></td>
-                    </tr>
                     </table>
                     </td>
                     </tr>
